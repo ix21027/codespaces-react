@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const Input = styled.input`
-  padding: 0.6rem;
-  margin-bottom: 0.96rem;
+  padding: 0.7rem;
   box-sizing: border-box;
   background: transparent;
 

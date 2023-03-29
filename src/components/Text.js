@@ -16,6 +16,5 @@ export const Subtitle = styled.p`
   font-size: 0.77em;
   font-weigth: 1em;
   color: #9496A6;
-  margin-top: 1em;
-  margin-bottom: 1.8em;
+  margin: 0 0 0 0;
 `

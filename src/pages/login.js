@@ -7,6 +7,7 @@ import { Form } from '../components/Form';
 
 import styled from "styled-components";
 // import { Link } from'react-router-dom';
+import Spacer from "../components/Spacer"
 
 export const LogIn = () => {
 
@@ -22,21 +23,23 @@ export const LogIn = () => {
     <LogInContainer>
       <Form onSubmit={handleSubmit}>
         <Title>Welcome back</Title>
+        <Spacer height={12} />
         <Subtitle>Welcome back! Please enter your details</Subtitle>
-        <br/>
+        <Spacer height={43} />
         <Input type="email" 
           placeholder="Email" 
           value={email} 
           onChange={(e) => setEmail(e.target.value)} />
+        <Spacer height={12} />
         <Input type="password" 
           placeholder="Password" 
           value={password} 
           onChange={(e) => setPassword(e.target.value)} 
         />
-        <br/>
+        <Spacer height={37} />
         <Button type="submit">Log in</Button>
-        <br/>
-        <Subtitle>Or <Link>Sign Up</Link>
+        <Spacer height={43} />
+        <Subtitle>Or <Link> Sign up</Link>
           {/* <Link to="/signup">Sign Up</Link> */}
         </Subtitle>
       </Form>

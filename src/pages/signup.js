@@ -11,23 +11,28 @@ import {
   Spacer 
 } from '../components/comps'
 
-export const LogIn = () => {
+export const SignUp = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate('dashboard')
+    navigate('/dashboard')
   }
 
   return (
     <LogInContainer>
       <Form onSubmit={handleSubmit}>
-        <Title>Welcome back</Title>
+        <Title>Welcome</Title>
         <Spacer height={12} />
-        <Subtitle>Welcome back! Please enter your details</Subtitle>
+        <Subtitle>Welcome! Please enter your details</Subtitle>
         <Spacer height={43} />
+        <Input placeholder="Name" 
+          value={name} 
+          onChange={(e) => setName(e.target.value)} />
+        <Spacer height={12} />
         <Input type="email" 
           placeholder="Email" 
           value={email} 
@@ -39,9 +44,9 @@ export const LogIn = () => {
           onChange={(e) => setPassword(e.target.value)} 
         />
         <Spacer height={37} />
-        <Button type="submit">Log in</Button>
+        <Button type="submit">Sign up</Button>
         <Spacer height={43} />
-        <Subtitle>Or<Link to="/signup"> Sign up</Link>
+        <Subtitle>Or<Link to="/login"> Log in</Link>
         </Subtitle>
       </Form>
     </LogInContainer>

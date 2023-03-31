@@ -5,11 +5,11 @@ import {
   Input, 
   Title, 
   Subtitle, 
-  LogInContainer, 
+  WelcomeContainer, 
   Form, 
   Link,
   Spacer 
-} from '../components/comps'
+} from '../components/ui/all'
 
 export const LogIn = () => {
   const navigate = useNavigate();
@@ -18,11 +18,11 @@ export const LogIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate('dashboard')
+    navigate('/dashboard')
   }
 
   return (
-    <LogInContainer>
+    <WelcomeContainer>
       <Form onSubmit={handleSubmit}>
         <Title>Welcome back</Title>
         <Spacer height={12} />
@@ -44,6 +44,6 @@ export const LogIn = () => {
         <Subtitle>Or<Link to="/signup"> Sign up</Link>
         </Subtitle>
       </Form>
-    </LogInContainer>
+    </WelcomeContainer>
   )
 }

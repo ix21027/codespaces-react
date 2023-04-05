@@ -5,6 +5,7 @@ const Icon = styled.svg`
   height: ${props => props.height || '1.5em'};
   fill: ${props => props.fill || 'none'};
   viewBox:  ${props => props.viewBox ||  '0 0 25 24'};
+  margin: ${({margin}) => margin || '2px'};
 `;
 
 export default Icon;

@@ -5,7 +5,7 @@ import {
   Input, 
   Title, 
   Subtitle, 
-  WelcomeContainer, 
+  Background, 
   Form, 
   Link,
   Spacer 
@@ -23,7 +23,7 @@ export const SignUp = () => {
   }
 
   return (
-    <WelcomeContainer>
+    <Background color='#242731'>
       <Form onSubmit={handleSubmit}>
         <Title>Welcome</Title>
         <Spacer height={12} />
@@ -49,6 +49,6 @@ export const SignUp = () => {
         <Subtitle>Or<Link to="/login"> Log in</Link>
         </Subtitle>
       </Form>
-    </WelcomeContainer>
+    </Background>
   )
 }

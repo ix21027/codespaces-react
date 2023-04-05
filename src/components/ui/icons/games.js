@@ -2,7 +2,7 @@ import Icon from './icon'
 
 export const GamesIcon = ({ fill, width, height }) => {
   return (
-      <Icon width={width} height={height} fill={fill}>
+      <Icon width={width} height={height} fill={fill} margin='0px'>
         <rect x="13.8" y="14" width="2" height="2" rx="1" fill="#9B53F8"/>
         <path d="M10.8 14H6.80005" stroke="#9B53F8" stroke-linecap="round"/>
         <path d="M8.80005 12L8.80005 16" stroke="#9B53F8" stroke-linecap="round"/>

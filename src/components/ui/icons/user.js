@@ -1,7 +1,7 @@
 import Icon from './icon'
 export const UserIcon = ({ fill, width, height }) => {
   return (
-      <Icon width={width} height={height} fill={fill || '#3CDC86'}>
+      <Icon width={width} height={height} fill={fill || '#3CDC86'} margin='1.5px'>
         <path d="M19.7406 17.875C18.3412 15.4643 16.1012 
           13.6549 13.45 12.7938C14.7208 12.0381 15.7083 10.8861 
           16.2608 9.51479C16.8134 8.14347 16.9005 6.62865 16.5086

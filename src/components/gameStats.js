@@ -7,11 +7,12 @@ import { Header } from './header';
 
 export function GameStatsRow() {
   return (
-    <Flex padding='16px 0 0 0 '>
-      <Tile>
-        <Flex direction='column' mr='20px'>
-          <Header color='#242731' />
-        </Flex>
+    <Flex gap='16px' padding='16px 0 0 0 '>
+      <Tile radius='4px' basis='79%'>
+        
+      </Tile>
+      <Tile radius='4px' basis='25.66%'>
+       
       </Tile>
     </Flex>
   );

@@ -10,6 +10,7 @@ const Flex = styled.div`
   width: 100%;
   flex-direction: ${({direction}) => direction || 'row'};
   align-items: flex-start;
+  flex-wrap: ${({$wrap}) => $wrap && 'wrap'};
 `;
 
 export default Flex;

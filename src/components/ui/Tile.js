@@ -10,4 +10,5 @@ export const Tile = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-basis: ${({basis}) => basis || ''};
 `;

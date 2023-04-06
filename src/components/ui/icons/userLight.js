@@ -1,16 +1,11 @@
 import Icon from './icon'
 import styled from'styled-components'
 import { Title } from '../all';
+import { IconBG } from './IconBG'
 
 const BG = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
-
   width: 36px;
   height: 36px;
-
   background: #242731;
   border-radius: 40px;
 `;

@@ -7,7 +7,6 @@ import Flex from '../components/ui/Flex';
 
 export const Dashboard = () => {
   return (
-    <> 
       <Background color='#111216' gap='34px'>
 
         <Sidebar />
@@ -21,6 +20,5 @@ export const Dashboard = () => {
         </Flex>
 
       </Background>
-    </>
   )
 }

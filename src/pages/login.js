@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { 
   Button, 
   Input, 
-  Title, 
-  Subtitle, 
+  Font,
   Background, 
   Form, 
   Link,
@@ -24,9 +23,9 @@ export const LogIn = () => {
   return (
     <Background color='#242731'>
       <Form onSubmit={handleSubmit}>
-        <Title>Welcome back</Title>
+        <Font $primary>Welcome back</Font>
         <Spacer height={12} />
-        <Subtitle>Welcome back! Please enter your details</Subtitle>
+        <Font>Welcome back! Please enter your details</Font>
         <Spacer height={43} />
         <Input type="email" 
           placeholder="Email" 
@@ -41,8 +40,8 @@ export const LogIn = () => {
         <Spacer height={37} />
         <Button type="submit">Log in</Button>
         <Spacer height={43} />
-        <Subtitle>Or<Link to="/signup"> Sign up</Link>
-        </Subtitle>
+        <Font>Or<Link to="/signup"> Sign up</Link>
+        </Font>
       </Form>
     </Background>
   )

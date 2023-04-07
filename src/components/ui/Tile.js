@@ -8,7 +8,7 @@ export const Tile = styled.div`
   border-radius: ${({ radius }) => radius || '8px'};
   flex-grow: ${({ flexGrow }) => flexGrow || '1'};
   display: flex;
-  align-items: center;
+  align-items: ${({ alignItems }) => alignItems};
   justify-content: flex-start;
-  flex-basis: ${({basis}) => basis || ''};
+  flex-basis: ${({ basis }) => basis || ''};
 `;

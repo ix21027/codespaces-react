@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Title } from './ui/Text';
-import { UserLightIcon, Text } from "./ui/icons/userLight";
+import { Font } from './ui/Font';
+import { UserLightIcon } from "./ui/icons/userLight";
 
 const HeaderContainer = styled.div`
   height: 59px;
@@ -9,14 +9,14 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0 28px 0;
+  padding: ${ ({p}) => p || '5px 0 28px 0'};
 `;
 
 export function Header({color}) {
   return (
     <HeaderContainer color={color}>
-      <Title w='100%' size='20px'>DASHBOARD</Title>
-      <UserLightIcon/> <Text> Username </Text>
+      <Font $primary w='100%' size='20px'>DASHBOARD</Font>
+      <UserLightIcon/> <Font $primary size='0.8em' ml='12px'> Username </Font>
     </HeaderContainer>
   );
 }

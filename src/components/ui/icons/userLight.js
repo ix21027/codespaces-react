@@ -1,7 +1,5 @@
 import Icon from './icon'
 import styled from'styled-components'
-import { Title } from '../all';
-import { IconBG } from './IconBG'
 
 const BG = styled.div`
   width: 36px;
@@ -10,17 +8,7 @@ const BG = styled.div`
   border-radius: 40px;
 `;
 
-const Text = styled(Title)`
-  font-size: 0.8em;
-  margin-left: 12px;
-  font-size: 14px;
-  line-height: 20px;
-  width: 69px;
-  height: 20px;
-
-`
-
-const UserLightIcon = ({ fill, width, height }) => {
+export const UserLightIcon = ({ fill, width, height }) => {
   return (
     <BG>
       <Icon width={width||"24"} height={height||"24"} fill={fill} margin='6px'>
@@ -30,5 +18,3 @@ const UserLightIcon = ({ fill, width, height }) => {
     </BG>
   );
 }
-
-export {UserLightIcon, Text};

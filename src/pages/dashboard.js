@@ -3,6 +3,7 @@ import { Background } from '../components/ui/all';
 import { InfoRow } from '../components/InfoRow'
 import { Sidebar } from '../components/ui/sidebar'
 import { GameStatsRow } from '../components/gameStats'
+import { GeneralSales } from '../components/GeneralSales'
 import Flex from '../components/ui/Flex';
 
 export const Dashboard = () => (
@@ -16,6 +17,8 @@ export const Dashboard = () => (
       <InfoRow /> 
 
       <GameStatsRow />
+
+      <GeneralSales />
     </Flex>
 
   </Background>

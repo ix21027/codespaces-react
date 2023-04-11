@@ -6,6 +6,7 @@ const Icon = styled.svg`
   fill: ${props => props.fill || 'none'};
   viewBox:  ${props => props.viewBox ||  '0 0 25 24'};
   margin: ${({margin}) => margin || '2px'};
+  overflow: initial;
 `;
 
 export default Icon;

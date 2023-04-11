@@ -7,11 +7,11 @@ import { GeneralSales } from '../components/GeneralSales'
 import Flex from '../components/ui/Flex';
 
 export const Dashboard = () => (
-  <Background color='#111216' gap='34px'>
+  <Background w='100wh' color='#111216' gap='2em'>
 
     <Sidebar />
     
-    <Flex display='column' mr='28px' $wrap>
+    <Flex w='95%' display='column' mr='28px' $wrap>
       <Header />
 
       <InfoRow /> 

@@ -8,13 +8,11 @@ import {MenuGames} from './icons/MenuGames';
 import {MenuSettings} from './icons/MenuSettings';
 
 const SideBarContainer = styled.div`
-  width: 90px;
   background-color: #242731;
   height: 100vh;
   display: flex;
   flex-direction: column;
 `;
-
 
 export const Sidebar = () => {
   return (

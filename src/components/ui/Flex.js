@@ -7,7 +7,7 @@ const Flex = styled.div`
   padding: 1.25em;
   gap: ${({gap}) => gap || '1.3em'};
   padding: ${({padding}) => padding || '0'};
-  width: 100%;
+  width: ${({w}) => w || '100%'};
   flex-direction: ${({direction}) => direction || 'row'};
   align-items: flex-start;
   flex-wrap: ${({$wrap}) => $wrap && 'wrap'};

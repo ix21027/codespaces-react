@@ -21,7 +21,7 @@ export const LogIn = () => {
   }
 
   return (
-    <Background color='#242731'>
+    <Background color='#242731' jc='center'>
       <Form onSubmit={handleSubmit}>
         <Font $primary>Welcome back</Font>
         <Spacer height={12} />
